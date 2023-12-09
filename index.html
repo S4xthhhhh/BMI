@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8caf6068b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Calculate your Body Mass Index</h1>
+        </div>
+        <div class="button">
+            <button class="gender male">
+                <h1>Male</h1>
+                <i class="fa-solid fa-mars"></i>
+            </button>
+            <button class="gender female">
+                <h1>Female</h1>
+                <i class="fa-solid fa-venus"></i>
+            </button>
+        </div>
+        <div class="sliders">
+            <div>
+                <label for="weight">Weight in Kg</label>
+                <input type="range" min="10" max="200" name="weight" id="weight">
+            </div>
+            <div>
+                <label for="height">Height in cm</label>
+                <input type="range" min="10" max="1000" name="height" id="height">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="range" name="age" id="age" min="10" max="200">
+            </div>
+            </div>
+            <input type="button" name="calculate" id="calculate" value="Calculate">
+    </div>
+    
+</body>
+</html>

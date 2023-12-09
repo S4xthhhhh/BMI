@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #a780f7;
+}
+.container{
+    margin-top: 60px;
+    background-color: lemonchiffon;
+    text-align: center;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+h1{
+    font-weight: 400;;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.button .gender{
+    background-color: #dcccfb;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 200;
+    border: none; 
+    margin: 10px;
+    margin-bottom: 60px;
+}
+.button .gender h1{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fa-mars, .fa-venus{
+    font-size: 60px;
+    width: auto;
+}
+.sliders{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#calculate{
+    background-color: #a780f7;
+    color: #ffffff;
+    margin-top: 30px;
+    border: none; 
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.gender:hover{
+    background-color: #a780f7;
+    color: #ffffff;
+    cursor: pointer;
+}
+.female:hover{
+    color: #ffffff;
+}
+input[type="range"] {
+    accent-color: #dcccfb;
+    border: none;
+  }
+  input[type="range"]:hover{
+    accent-color: #a780f7;
+  }
