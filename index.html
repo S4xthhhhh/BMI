@@ -11,35 +11,53 @@
 <script src="https://kit.fontawesome.com/8caf6068b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script>
+
+        function updateSlider(slideAmount){
+          var sliderDiv = document.getElementById("weightValue");
+         sliderDiv.innerHTML = slideAmount+" Kg";
+        }
+
+        function updateHeight(height){
+            document.getElementById("heightValue").innerHTML=height+" cm";
+        }
+        function updateAge(age){
+            document.getElementById("ageValue").innerHTML = age;
+        }
+    </script>
     <div class="container">
         <div class="text">
             <h1>Calculate your Body Mass Index</h1>
         </div>
         <div class="button">
-            <button class="gender male">
+            <button class="gender male" onclick="clicked()">
                 <h1>Male</h1>
                 <i class="fa-solid fa-mars"></i>
             </button>
-            <button class="gender female">
+            <button class="gender female" onclick="clicked()">
                 <h1>Female</h1>
                 <i class="fa-solid fa-venus"></i>
             </button>
         </div>
         <div class="sliders">
             <div>
+                <p id="weightValue">50 kg</p>
                 <label for="weight">Weight in Kg</label>
-                <input type="range" min="10" max="200" name="weight" id="weight">
+                <input type="range" min="10" max="200" name="weight" id="weight" value="50" onchange="updateSlider(this.value)">
+                <div id="sliderAmount"></div>
             </div>
             <div>
+                <p id="heightValue">200 cm</p>
                 <label for="height">Height in cm</label>
-                <input type="range" min="10" max="1000" name="height" id="height">
+                <input type="range" min="10" max="300" name="height" id="height" onchange="updateHeight(this.value)" value="200">
             </div>
             <div>
+                <p id="ageValue">18</p>
                 <label for="age">Age</label>
-                <input type="range" name="age" id="age" min="10" max="200">
+                <input type="range" name="age" id="age" min="10" max="120" value="18" onchange="updateAge(this.value)">
             </div>
             </div>
-            <input type="button" name="calculate" id="calculate" value="Calculate">
+            <input type="button" name="calculate" id="calculate" value="CALCULATE" onclick="location.href='./result.html'">
     </div>
     
 </body>
